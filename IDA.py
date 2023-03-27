@@ -1,6 +1,5 @@
 import random
 import math
-import time
 
 class Pancakes:
 
@@ -28,17 +27,16 @@ class Pancakes:
 		if nodo == self.orden[0:len(nodo)]:
 			return
 		while True:
-			resultado = self.busqProfundidad(nodo, ["0"], self.h(nodo), 0)
+			resultado = self.busqProfundidad(nodo, ["0"], self.h(nodo))
 			if resultado == -1:
 				self.profundidad += 1
 			elif resultado == -2:
-
 				self.cota = self.min
 				self.min = math.inf
 			else:
 				return resultado
 
-	def busqProfundidad(self, nodo, ant, h, profundidad):
+	def busqProfundidad(self, nodo, ant, h):
 		if nodo == self.orden[0:len(nodo)]:
 			return " ".join(ant[1:])
 	
@@ -49,7 +47,7 @@ class Pancakes:
 				continue 
 			nodo_volt = self.voltear(i,nodo)
 			if (self.h(nodo_volt) + 1) <= self.cota:
-					resultado = self.busqProfundidad(nodo_volt, ant + [str(i)], self.h(nodo_volt), profundidad + 1)
+					resultado = self.busqProfundidad(nodo_volt, ant + [str(i)], self.h(nodo_volt))
 					if resultado != -1:
 						break
 			else:
