@@ -25,8 +25,7 @@ Esta funcion recibe como parametros el nodo a partir del cual se realizará la b
  movimientos que se tiene que realizar para ordenar de menor a mayor los pancakes y en caso de no encontrar solución retornará el valor heuristico minimo de los nodos analizados.
  
  ## Como utilizar el código
- Para poder utilizar el código se tiene que crear una instancia de la clase "Pancakes" añadiendole como parametro una lista desordenada  
- de letras minusculas y luego llamar a la funcion ida() dandole como parametro la lista a ordenar. El resultado de la ejecución será una serie de numeros que indican los movimientos que se tienen que realizar para resolver ese problema.
+ Para poder utilizar el código se tiene que crear una instancia de la clase "Pancakes" añadiendole como parametro una lista desordenada de letras minusculas y luego llamar a la funcion ida() dandole como parametro la lista a ordenar. El resultado de la ejecución será una serie de numeros que indican los movimientos que se tienen que realizar para resolver ese problema.
  
 A continuación se presenta un ejemplo de como utilizar el código:
 
