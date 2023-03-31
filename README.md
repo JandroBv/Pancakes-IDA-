@@ -11,8 +11,7 @@ Este programa resuelve el problema de pancake sorting mediante el uso del algori
  
  ### **'voltear(self, posicion, pancakes)'**
  
-Esta funcion recibe como parametro la posición donde se van a voltear los pancakes y la lista a voltear y devuelve los pancakes volteados  
-desde esa posición.
+Esta funcion recibe como parametro la posición donde se van a voltear los pancakes y la lista a voltear y devuelve los pancakes volteados desde esa posición.
 
  ### **'h(self, nodo)'**
  Esta función se encarga de la heuristica del programa, devuelve el valor de la heuristica del nodo introducido como parametro de la función.
